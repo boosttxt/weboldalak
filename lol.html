@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" >
+        function teszt() {
+            var trank = document.getElementById("yourrank").value;
+            var drank = document.getElementById("rank").value;
+            var ar = rank.value - yourrank.value;
+            console.log(trank)
+            console.log(ar);
+            window.alert("Az ár:" + ar + "€")
+        }
+
+    </script>
+</head>
+<body>
+    Te rankod:
+    <select id="yourrank" onchange="teszt();">
+        <option id="14" value="0">Iron IV</option>
+        <option id="15" value="20">Iron III</option>
+        <option id="16" value="40">Iron II</option>
+        <option id="17" value="60">Iron I</option>
+        <option id="18" value="80">Bronze IV</option>
+        <option id="19" value="100">Bronze III</option>
+        <option id="20" value="120">Bronze II</option>
+        <option id="21" value="140">Bronze I</option>
+        <option id="22" value="160">Silver IV</option>
+        <option id="23" value="200">Silver III</option>
+        <option id="22" value="210">Silver II</option>
+        <option id="23" value="220">Silver I</option>
+    </select>
+    Választott rank:
+    <select id="rank" onchange="teszt();">
+        <option id="14" value="20">Iron III</option>
+        <option id="15" value="40">Iron II</option>
+        <option id="16" value="60">Iron I</option>
+        <option id="17" value="90">Bronze IV</option>
+        <option id="18" value="150">Bronze III</option>
+        <option id="19" value="180">Bronze II</option>
+        <option id="20" value="220">Bronze I</option>
+        <option id="21" value="270">Silver IV</option>
+        <option id="22" value="360">Silver III</option>
+        <option id="23" value="440">Silver II</option>
+        <option id="24" value="600">Silver I </option>
+        <option id="23" value="630">Gold IV</option>
+
+    </select>
+
+</body>
+</html>

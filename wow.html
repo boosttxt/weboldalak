@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function teszt() {
+            var trank = document.getElementById("yourrank").value;
+            var drank = document.getElementById("rank").value;
+            var ar = rank.value - yourrank.value;
+            console.log(trank)
+            console.log(ar);
+            window.alert("Az ár:" + ar + "€")
+        }
+    </script>
+</head>
+<body>
+    Te rankod:
+    <select id="yourrank" onchange="teszt();">
+        <option id="14" value="0">1400</option>
+        <option id="15" value="20">1500</option>
+        <option id="16" value="40">1600</option>
+        <option id="17" value="60">1700</option>
+        <option id="18" value="80">1800</option>
+        <option id="19" value="100">1900</option>
+        <option id="20" value="120">2000</option>
+        <option id="21" value="140">2100 </option>
+        <option id="22" value="160">2200 </option>
+        <option id="23" value="180">2300 </option>
+    </select>
+    Választott rank:
+    <select id="rank" onchange="teszt();">
+        <option id="14" value="20">1400</option>
+        <option id="15" value="40">1500</option>
+        <option id="16" value="60">1600</option>
+        <option id="17" value="90">1700</option>
+        <option id="18" value="150">1800</option>
+        <option id="19" value="180">1900</option>
+        <option id="20" value="220">2000</option>
+        <option id="21" value="270">2100 </option>
+        <option id="22" value="360">2200 </option>
+        <option id="23" value="440">2300 </option>
+        <option id="24" value="600">2400 </option>
+
+    </select>
+</body>
+</html>

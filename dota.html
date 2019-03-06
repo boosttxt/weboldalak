@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+    function teszt() {
+        var trank = document.getElementById("yourrank").value;
+        var drank = document.getElementById("rank").value;
+        var ar = rank.value - yourrank.value;
+        console.log(trank)
+        console.log(ar);
+        window.alert("Az ár:" + ar + "€")
+    }
+    </script>
+</head>
+<body>
+    Te rankod:
+    <select id="yourrank" onchange="teszt();">
+        <option id="14" value="0">uncalibrated</option>
+        <option id="15" value="20">herald</option>
+        <option id="16" value="40">guardian</option>
+        <option id="17" value="60">crusader</option>
+        <option id="18" value="80">archon</option>
+        <option id="20" value="120">legend</option>
+        <option id="21" value="140">ancient </option>
+        <option id="22" value="160">divine </option>
+        <option id="23" value="180">immortal</option>
+    </select>
+    Választott rank:
+    <select id="rank" onchange="teszt();">
+        <option id="15" value="40">herald</option>
+        <option id="16" value="60">guardian</option>
+        <option id="17" value="90">crusader</option>
+        <option id="18" value="150">archon</option>
+        <option id="19" value="180">legend</option>
+        <option id="20" value="220">ancient</option>
+        <option id="21" value="270">divine </option>
+        <option id="22" value="360">imortal</option>
+    </select>
+</body>
+</html>
