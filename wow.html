@@ -11,7 +11,7 @@
             var ar = rank.value - yourrank.value;
             console.log(trank)
             console.log(ar);
-            window.alert("Az ár:" + ar + "€")
+            document.getElementById('kiiras').innerHTML = 'Az ár:' + ar + "€";
         }
     </script>
 </head>
@@ -44,5 +44,7 @@
         <option id="24" value="600">2400 </option>
 
     </select>
+    <br/>
+    <span id="kiiras"></span>
 </body>
 </html>
