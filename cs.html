@@ -1,60 +1,195 @@
 ﻿<!DOCTYPE html>
 
+
+
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+
     <meta charset="utf-8" />
+
     <title></title>
+
     <script type="text/javascript">
+
         function teszt() {
+
             var trank = document.getElementById("yourrank").value;
+
             var drank = document.getElementById("rank").value;
+
             var ar = rank.value - yourrank.value;
+
             console.log(trank)
+
             console.log(ar);
+
             document.getElementById('kiiras').innerHTML = 'Az ár:' + ar + "€";
+
+            if (ar < 0) {
+
+                window.alert("Minuszba nem tudunk árakat adni");
+
+
+                var elem = document.getElementById('vasarlas');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+
         }
+        function kiiras() {
+
+
+            window.alert("A művelet nem hajtható végre, A vásárlási szerverek nem elérhetőek __")
+
+        }
+
     </script>
+
+    <style>
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: 2px solid cyan;
+            border-radius: 50px;
+            padding: 10px 60px;
+            background-color: #333333;
+            font-family: Open Sans;
+            text-transform: capitalize;
+            color: white;
+            font-weight: bolder;
+            cursor: pointer;
+            text-align: center;
+            font-size: large;
+        }
+
+        span {
+            font-family: Open Sans;
+            text-transform: capitalize;
+            color: black;
+            font-weight: bolder;
+            text-align: center;
+            font-size: large;
+        }
+
+        input {
+            border: 2px solid cyan;
+            border-radius: 50px;
+            padding: 10px 60px;
+            background-color: #333333;
+            font-family: Open Sans;
+            text-transform: capitalize;
+            color: white;
+            font-weight: bolder;
+            cursor: pointer;
+            transitio: 0.25s;
+            outline: none;
+            marign: 20px auto;
+            text-align: center;
+            font-size: large;
+        }
+
+        button:hover {
+            background-color: #00b3b3;
+        }
+
+        select:hover {
+            background-color: #00b3b3;
+        }
+    </style>
+
 </head>
+
 <body>
-    Te rankod:
-    <select id="yourrank" onchange="teszt();">
-        <option id="Silver1" value="0">Silver 1</option>
-        <option id="Silver2" value="20">Silver 2</option>
-        <option id="Silver3" value="40">Silver 3</option>
-        <option id="Silver4" value="60">Silver 4</option>
-        <option id="Silver Elite" value="80">Silver Elite</option>
-        <option id="Silver Elite Master" value="100">Silver Elite Master</option>
-        <option id="Nova 1" value="120">Nova 1</option>
-        <option id="Nova 2" value="140">Nova 2 </option>
-        <option id="Nova 3" value="160">Nova 3 </option>
-        <option id="Nova 4" value="180">Nova 4 </option>
-        <option id="mg1" value="240">Master Guardian 1</option>
-        <option id="mg2" value="280">Master Guardian 2</option>
-        <option id="mg3" value="320">Master Guardian Elite</option>
-        <option id="dmg" value="360">Distinguished Master Guardian</option>
+
+    <span>
+        Te rankod:</spawn>
+
+        <select id="yourrank" onchange="teszt();">
+
+            <option id="Silver1" value="0">Silver 1</option>
+
+            <option id="Silver2" value="20">Silver 2</option>
+
+            <option id="Silver3" value="40">Silver 3</option>
+
+            <option id="Silver4" value="60">Silver 4</option>
+
+            <option id="Silver Elite" value="80">Silver Elite</option>
+
+            <option id="Silver Elite Master" value="100">Silver Elite Master</option>
+
+            <option id="Nova 1" value="120">Nova 1</option>
+
+            <option id="Nova 2" value="140">Nova 2 </option>
+
+            <option id="Nova 3" value="160">Nova 3 </option>
+
+            <option id="Nova 4" value="180">Nova 4 </option>
+
+            <option id="mg1" value="240">Master Guardian 1</option>
+
+            <option id="mg2" value="280">Master Guardian 2</option>
+
+            <option id="mg3" value="320">Master Guardian Elite</option>
+
+            <option id="dmg" value="360">Distinguished Master Guardian</option>
 
 
-    </select>
-    Választott rank:
-    <select id="rank" onchange="teszt();">
-        <option id="silver2" value="20">Silver 2</option>
-        <option id="silver3" value="40">Silver 3</option>
-        <option id="silver4" value="60">Silver 4</option>
-        <option id="Silver Elite" value="80">Silver Elite</option>
-        <option id="Silver Elite Master" value="100">Silver Elite Master</option>
-        <option id="Nova 1" value="130">Nova 1</option>
-        <option id="Nova 2" value="160">Nova 2 </option>
-        <option id="Nova 3" value="190">Nova 3 </option>
-        <option id="Nova 4" value="220">Nova 4 </option>
-        <option id="mg1" value="250">Master Guardian 1</option>
-        <option id="mg2" value="300">Master Guardian 2</option>
-        <option id="mg3" value="350">Master Guardian Elite</option>
-        <option id="dmg" value="400">Distinguished Master Guardian</option>
-        <option id="le" value="500">Legendary Eagle</option>
 
-    </select>
-    <br/>
+
+
+        </select>
+
+
+
+        <span> Választott rank:</span>
+
+        <select id="rank" onchange="teszt();">
+
+            <option id="silver2" value="20">Silver 2</option>
+
+            <option id="silver3" value="40">Silver 3</option>
+
+            <option id="silver4" value="60">Silver 4</option>
+
+            <option id="Silver Elite" value="80">Silver Elite</option>
+
+            <option id="Silver Elite Master" value="100">Silver Elite Master</option>
+
+            <option id="Nova 1" value="130">Nova 1</option>
+
+            <option id="Nova 2" value="160">Nova 2 </option>
+
+            <option id="Nova 3" value="190">Nova 3 </option>
+
+            <option id="Nova 4" value="220">Nova 4 </option>
+
+            <option id="mg1" value="250">Master Guardian 1</option>
+
+            <option id="mg2" value="300">Master Guardian 2</option>
+
+            <option id="mg3" value="350">Master Guardian Elite</option>
+
+            <option id="dmg" value="400">Distinguished Master Guardian</option>
+
+            <option id="le" value="500">Legendary Eagle</option>
+
+
+
+        </select>
+
+        <br />
+
         <span id="kiiras">
+
         </span>
+        <br />
+
+        <input type="button" id="vasarlas" value="Vásárlás" onclick="kiiras()" />
+
+
 </body>
+
 </html>
